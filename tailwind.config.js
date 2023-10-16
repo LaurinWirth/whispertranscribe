@@ -22,11 +22,16 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
         mainPurple: 'hsl(257, 88%, 71%)', 
+        logoPurple: 'hsl(260, 50%, 49%)',
+      },
+      fontFamily: {
+        'otomanopee': ["'Otomanopee One'", 'sans-serif']
       },
     },
   },
   plugins: [
     require('tailwindcss-patterns'),
+    require('@tailwindcss/typography'),
 
   ],
 }

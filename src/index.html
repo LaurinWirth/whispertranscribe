@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="/dist/output.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
 </head>
-<body class="pattern-tic-tac-toe-blue-700/10 pattern-tic-tac-toe-scale-[1]">
+<body class="" id="home">
     <nav class="relative container header:w-10/12 mx-auto mt-8 p-4 pl-6 pr-6 bg-white rounded-full shadow hidden md:block border border-slate-200">
         
       <!-- Flex Container -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between" >
             <!-- Logo -->
-            <div class="flex items-center" >
+            <a href="#home" class="flex items-center">
               <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
-              <h1 class="ml-2 font-bold text-lg">WhisperTranscribe</h1>
-          </div>
+              <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee leading-tight ">Whisper<br>Transcribe</h1>
+            </a>
     
 
             <!-- Menu -->
@@ -29,17 +29,26 @@
             </div>
     
             <!-- Button -->
-            <a href="" class="font-bold inline-flex p-3 px-6 pt-2 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free</a>
+            <a href="" class="font-bold inline-flex p-3 px-6 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
 
         </div>
     </nav>
     
     <!--Hero Section-->
-    <section id="hero" class="header:w-10/12 mx-auto mt-16">
+    <section id="hero" class="header:w-10/12 mx-auto mt-8">
         <!-- Flex Container -->
-        <div class="container flex flex-col justify-center items-left px-6 mx-auto space-y-0 md:space-y-0 md:flex-row">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center justify-center mb-8 md:hidden">
+          <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
+          <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee leading-tight ">Whisper<br>Transcribe</h1>
+        </a>
+
+        <div class="container flex flex-col justify-center items-center items-left px-6 mx-auto space-y-0 
+        md:space-y-0 md:flex-row">
             <!--Left Item-->
-            <div class="flex flex-col flex-grow mb-6 pl-6 space-y-6 mr-8  md:w-1/2 md:mb-16"> 
+            <div class="flex flex-col mb-6 pl-6 space-y-6 mr-8  md:w-1/2 md:mb-16 order-2 md:order-1"> 
+              
                 <h1 class="text-slate-950 max-w-md text-4xl font-bold text-center md:text-5xl md:text-left ">
                     Turn your audio into content. 
                 </h1>
@@ -50,11 +59,11 @@
                     Generate a summary, show notes, titles, social media posts, a blog posts or custom content from your audio. 
                 </p>
                 
-                <div class="flex justify-center md:justify-start">
-                    <a href="" class="w-3/5 font-bold p-3 px-6 pt-2 text-center md:text-left
+                <div class="flex justify-center md:justify-start w-full">
+                    <a href="" class="font-bold p-3 px-6  text-center md:text-left
                     text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full 
                     baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-2xl hover:shadow-3xl 
-                    hover:ring-2 hover:ring-purple-500 hover:ring-opacity-50 lg:w-2/5">  Try it for free →
+                    hover:ring-2 hover:ring-purple-500 hover:ring-opacity-50 ">  Try it for free →
                     </a>
                 </div>
                
@@ -78,16 +87,20 @@
                         </svg>
                     </div>
                   </div>
-                </div>     
+            </div>
+
+   
 
             <!--Right Item-->
-            <div class="flex flex-col flex-grow space-y-12  max-w-lg md:w-1/2">
-            <img src="/img/hero2.png"/>
-            </div>
-        </div>
+            <div class="flex flex-col space-y-12  md:w-3/5 order-1">
+            <img class="hidden md:block" src="/img/Hero image_desktop@2x.png"/>
+            <img class="md:hidden" src="/img/Mobile_Hero image@2x.png"
+            </div>  
+          </div>
+      </section>
 
         <!--Mentions-->
-    </section>
+  
     <section id="socialproof-logos" class="header:w-10/12 mx-auto">
         <div class="container flex flex-row flex-grow justify-around mt-6 px-6 mx-auto md:mt-[-25px] xl:mt-6">
           <div class="max-w-full flex-shrink flex-row ">
@@ -105,7 +118,7 @@
 
       <!--Break-->
       <div class="header:w-10/12 mx-auto justify-center mt-8 container flex">
-          <svg class="animate-heartbeat w-20 h-20 "  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="animate-heartbeat w-16 h-16 "  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.25 6.875L10 13.125L3.75 6.875" stroke="url(#paint0_linear_180_273)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <defs>
             <linearGradient id="paint0_linear_180_273" x1="10" y1="16" x2="10" y2="8" gradientUnits="userSpaceOnUse">
@@ -161,12 +174,12 @@
 
      <!--CTA-->
      <div class="flex justify-center mt-10 drop-shadow-2xl hover:drop-shadow-2xl ">
-        <a href="" class="font-bold p-3 px-6 pt-2 text-center 
+        <a href="" class="font-bold p-3 px-6 text-center 
         text-white text-lg bg-gradient-to-r from-mainPurple to-blue-500 rounded-full 
         baseline hover:from-purple-700 hover:to-blue-700 transition duration-300  
         hover:ring-2 hover:ring-purple-500 hover:ring-opacity-50 w-2/5 lg:w-1/6">
         
-        → Try it for free
+         Try it for free →
         
         </a>
     </div>
@@ -178,80 +191,93 @@
               <h2 class="mb-8 text-4xl font-semibold text-center">Use Cases ✨</h2>
 
     <!--Elements-->           
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/Transcript.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
-                        Transcribe
-                    </h3>
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/Transcript.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
+                        Transcribe 
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Transcribe any audio with more than 95% accuracy in 54 languages. 
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Transcribe any audio with more than 95% accuracy in 54 languages. 
-                </div>
                 </div>
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/blogposts.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
-                        Generate Blog-posts
-                    </h3>
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/blogposts.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
+                        Generate Blog-posts 
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Automatically create a blog post from your audio.
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Automatically create a blog post from your audio. 
-                </div>
                 </div>
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/socialmedia.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
-                        Create Your Social Media Posts
-                    </h3>
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/socialmedia.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
+                        Create your social media posts
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Automatically generate Twitter posts, threats or longer LinkedIn posts that fit your style.
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Automatically generate Twitter posts, threats or longer LinkedIn posts that fit your style.  
-                </div>
                 </div>
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/Transcript.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
-                        Create a Newsletter
-                    </h3>
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/newsletter.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
+                        Create a Newsletter 
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Save time by creating a newsletter directly from your audio in minutes instead of hours.
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Save time by creating a newsletter directly from your audio in minutes instead of hours. 
-                </div>
                 </div>
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/Titles.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/Titles.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
                         Titles and Show Notes
-                    </h3>
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Get engaging title suggestions and detailed show notes for your audio or podcast.
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Get engaging title suggestions and detailed show notes for your audio or podcast.  
-                </div>
                 </div>
 
-                <div class="p-6 bg-white  rounded-lg border border-slate-200 shadow-lg">
+                <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2" src="/img/customcontent.jpg" width="40px" height="40px">
-                    <h3 class="text-xl font-semibold">
-                        Custom Content
-                    </h3>
+                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/customcontent.jpg">
+                    <div> 
+                      <h3 class="text-3xl mb-2 font-semibold">
+                        Custom content 
+                      </h3>
+                      <p class="items-start justify-center text-black-600 mt-2  dark:text-gray-300">
+                        Create your own content in your own style. You can interact with your audio in the same way you can interact with ChatGPT.
+                      </p>
+                    </div>
                   </div>
-                <div class="items-start justify-center text-black-600  dark:text-gray-300">
-                  Create your own content in your own style. You can interact with your audio in the same way you can 
-                  interact with ChatGPT.
                 </div>
-                </div>     
+
+
             </div>
           </section>
 
@@ -277,7 +303,7 @@
                                 <span class="text-gray-400 font-medium"></span>
                             </p>
                             <hr class="mt-4 border-1">
-                            <div class="pt-8 space-y-6">
+                            <div class="pt-8 space-y-6 text.">
                                 <p class="font-semibold text-gray-400 text-center flex items-center pricing:text-left">
                                     <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                       <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
@@ -303,16 +329,10 @@
                                     </span>
                                   </p>
 
-                                <a href="#" class="">
-                                    <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                                        <span class="font-medium">
-                                            Try for free
-                                        </span>
-                                        <span class="pl-2 material-icons align-middle text-sm">
-                                            →
-                                        </span>
-                                    </p>
-                                </a>
+                                  <a href="" class="font-semibold inline-flex full-w
+                                  p-4 px-6 text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
+                                  baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
+                                  shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
                             </div>
                         </div>
                         
@@ -351,19 +371,12 @@
                                     <span class="pl-2">
                                        <span class="text-white">Full access to all features</span>
                                     </span>
-                                  </p>
-
-                                <a href="#" class="">
-                                    <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                                        <span class="font-medium">
-                                            Choose Plan
-                                        </span>
-                                        <span class="pl-2 material-icons align-middle text-sm">
-                                            →
-                                        </span>
-                                    </p>
-                                </a>
+                                  </p>         
                             </div>
+                            <a href="" class="mt-8 font-semibold inline-flex full-w
+                            p-4 px-6 text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
+                            baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
+                            shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900 pricing:mt-16">Choose Plan →</a>
                         </div>
 
                         <!-- Yearly Card -->
@@ -409,16 +422,10 @@
                                        <span class="text-black">Priority Support</span>
                                     </span>
                                   </p>
-                                <a href="#" class="">
-                                    <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                                        <span class="font-medium">
-                                            Choose Plan
-                                        </span>
-                                        <span class="pl-2 material-icons align-middle text-sm">
-                                            →
-                                        </span>
-                                    </p>
-                                </a>
+                                  <a href="" class="font-semibold inline-flex full-w
+                                  p-4 px-6  text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
+                                  baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
+                                  shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Choose Plan →</a>
                             </div>
                         </div>
                     </div>
@@ -552,13 +559,13 @@
       >
         <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
           <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
+            <a href="/src/ToS.html" class="text-gray-500 transition hover:opacity-75">
               Terms & Conditions
             </a>
           </li>
   
           <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
+            <a href="/src/privacy-policy.html" class="text-gray-500 transition hover:opacity-75">
               Privacy Policy
             </a>
           </li>
@@ -608,12 +615,12 @@
 
           <li>
             <a
-              href="/"
+              href="mailto:support@whispertranscribe.com"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:opacity-75"
             >
-              <span class="sr-only">Twitter</span>
+              <span class="sr-only">Email</span>
               <svg class="h-6 w-6" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
