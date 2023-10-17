@@ -29,7 +29,7 @@
             </div>
     
             <!-- Button -->
-            <a href="" class="font-bold inline-flex p-3 px-6 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
+            <a href="/src/download.html" class="font-bold inline-flex p-3 px-6 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
 
         </div>
     </nav>
@@ -41,13 +41,14 @@
         <!-- Logo -->
         <a href="#home" class="flex items-center justify-center mb-8 md:hidden">
           <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
-          <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee leading-tight ">Whisper<br>Transcribe</h1>
+          <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee ">WhisperTranscribe</h1>
         </a>
 
         <div class="container flex flex-col justify-center items-center items-left px-6 mx-auto space-y-0 
         md:space-y-0 md:flex-row">
             <!--Left Item-->
-            <div class="flex flex-col mb-6 pl-6 space-y-6 mr-8  md:w-1/2 md:mb-16 order-2 md:order-1"> 
+            <div class="flex flex-col pl-6 space-y-6 mr-8  md:w-1/2 md:mb-16 order-2 
+            md:order-1 -mt-20 md:mt-4"> 
               
                 <h1 class="text-slate-950 max-w-md text-4xl font-bold text-center md:text-5xl md:text-left ">
                     Turn your audio into content. 
@@ -60,7 +61,7 @@
                 </p>
                 
                 <div class="flex justify-center md:justify-start w-full">
-                    <a href="" class="font-bold p-3 px-6  text-center md:text-left
+                    <a href="/src/download.html" class="font-bold p-3 px-6  text-center md:text-left
                     text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full 
                     baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-2xl hover:shadow-3xl 
                     hover:ring-2 hover:ring-purple-500 hover:ring-opacity-50 ">  Try it for free →
@@ -92,7 +93,7 @@
    
 
             <!--Right Item-->
-            <div class="flex flex-col space-y-12  md:w-3/5 order-1">
+            <div class="flex flex-col space-y-12  md:w-3/5 order-1 ">
             <img class="hidden md:block" src="/img/Hero image_desktop@2x.png"/>
             <img class="md:hidden" src="/img/Mobile_Hero image@2x.png"
             </div>  
@@ -130,59 +131,69 @@
       </div>
 
 
+      <section class="bg-white py-8 mx-auto header:w-10/12 " id="how">
+        <div class="container  mx-auto m-4 items-center">
+          <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-slate-950 md:text-5xl">
+            How does it work?
+          </h2>
 
-      <!--Cards with image -->
-    
-      <!--Explaination-->
-      <section class="" id="how">
-        <div class="mx-auto justify-center mt-2 container flex header:w-10/12">
-            <h1 class="text-4xl font-semibold flex flex-row"> How does it work?</h1>
-        </div>
 
-        <div class="mx-auto justify-center mt-10 container flex flex-col-reverse header:w-10/12 md:flex-row">
-            <div class="flex flex-grow space-y-12  max-w-lg">
-                <img src="/img/hero.svg"/>
+          <div class="flex flex-wrap flex-col-reverse md:flex-row">
+            <div class="w-full md:w-1/2 p-6 md:mt-6 -mt-16">
+              <img class="rounded-xl" src="/img/Step1.gif" alt="Generate Content"/>
             </div>
-            <div class="flex-col flex justify-center ml-4">
-                <h1 class="text-4xl text-center md:text-left"> 1. Send a voice note</h1>
-                <p class="text-center md:text-left"> Add the Auddie WhatsApp bot and send a voice note to it.</p>
+            <div class="w-full md:w-1/2 p-6 mt-6 text-center md:text-left flex items-center">
+              <div class="align-middle" id="text1">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                  1. Upload Audio
+                </h3>
+                <p class="text-gray-600 mb-8 md:mb-0">
+                  Find any podcast, use a YouTube link, upload your own audio or record in the app. 
+                </p>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <div class="flex flex-wrap items-center">
+            <div class="w-full mt-6 md:w-1/2 p-6 text-center md:text-left">
+              <h3 class="text-3xl text-slate-950 font-bold leading-none mb-3">
+                2. Get your Transcript
+              </h3>
+              <p class="text-gray-600 mb-8 md:mb-0">
+                Get an 95% accurate transcript of your audio and download subtitles.
+              </p>
+            </div>
+            
+            <div class="w-full md:w-1/2 p-6 md:mt-6 -mt-16">
+              <img class="rounded-xl" src="/img/Step2.gif" alt="Get a Transcript"/>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap flex-col-reverse md:flex-row">
+            <div class="w-full md:w-1/2 p-6 md:mt-6 -mt-16 ">
+              <img class="rounded-xl" src="/img/Step3.gif" alt="Generate Content"/>
+            </div>
+            <div class="w-full mt-6 md:w-1/2 p-6 text-center flex items-center md:text-left">
+              <div class="align-middle">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                  3. Generate Content
+                </h3>
+                <p class="text-gray-600 mb-8 md:mb-0">
+                  Create publish ready blog posts, social media content, show-notes, titles or your own content from your audio.
+                  
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         
+  </div>
+      </section>
 
-        <div class="mx-auto justify-center mt-10 container flex flex-col-reverse header:w-10/12 md:flex-row">
-            <div class="flex-col flex justify-center ml-4">
-                <h1 class="text-4xl text-center md:text-left"> 1. Send a voice note</h1>
-                <p class="text-center md:text-left"> Add the Auddie WhatsApp bot and send a voice note to it.</p>
-            </div>
-            <div class="flex flex-grow space-y-12  max-w-lg">
-                <img src="/img/hero.svg"/>
-            </div>
-        </div>
+      
 
-        <div class="mx-auto justify-center mt-10 container flex flex-col-reverse header:w-10/12 md:flex-row">
-            <div class="flex flex-grow space-y-12  max-w-lg">
-                <img src="/img/hero.svg"/>
-            </div>
-            <div class="flex-col flex justify-center ml-4">
-                <h1 class="text-4xl text-center md:text-left"> 1. Send a voice note</h1>
-                <p class="text-center md:text-left"> Add the Auddie WhatsApp bot and send a voice note to it.</p>
-            </div>
-        </div>
-     </section>
-
-     <!--CTA-->
-     <div class="flex justify-center mt-10 drop-shadow-2xl hover:drop-shadow-2xl ">
-        <a href="" class="font-bold p-3 px-6 text-center 
-        text-white text-lg bg-gradient-to-r from-mainPurple to-blue-500 rounded-full 
-        baseline hover:from-purple-700 hover:to-blue-700 transition duration-300  
-        hover:ring-2 hover:ring-purple-500 hover:ring-opacity-50 w-2/5 lg:w-1/6">
-        
-         Try it for free →
-        
-        </a>
-    </div>
+   
 
   
 <!--Use Cases-->
@@ -195,7 +206,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/Transcript.jpg">
+                    <img class="mr-2 " src="/img/Transcribe.png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Transcribe 
@@ -209,7 +220,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/blogposts.jpg">
+                    <img class="mr-2 " src="/img/General.png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Generate Blog-posts 
@@ -223,7 +234,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/socialmedia.jpg">
+                    <img class="mr-2" src="/img/Create.png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Create your social media posts
@@ -237,7 +248,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/newsletter.jpg">
+                    <img class="mr-2 " src="/img/Create a Newsletter.png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Create a Newsletter 
@@ -251,7 +262,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/Titles.jpg">
+                    <img class="mr-2 " src="/img/Titles(1).png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Titles and Show Notes
@@ -265,7 +276,7 @@
 
                 <div class="p-2 bg-white  rounded-lg border border-slate-200 shadow-lg">
                   <div class="flex flex-row items-center"> 
-                    <img class="mr-2 w-1/5 sm:w-1/3" src="/img/customcontent.jpg">
+                    <img class="mr-2 " src="/img/Custom content.png">
                     <div> 
                       <h3 class="text-3xl mb-2 font-semibold">
                         Custom content 
@@ -283,19 +294,19 @@
 
     
     <!--Pricing-->
-    <section class="">
+    <section class="" id="price">
         <div class="container max-w-screen-xl header:w-10/12 px-6 mx-auto">
             <div class="min-h-screen flex justify-center ">
                 <div class="w-full pricing:w-auto">
                     <div class="text-center font-semibold">
-                        <h1 class="text-4xl">
+                        <h1 class="text-4xl font-bold  mx-auto pt-4 text-center pb-4">
                             Pricing
                         </h1>
                     </div>
-                    <div class="pt-12 flex space-y-6 flex-col pricing:pt-18 pricing:flex-row">
+                    <div class="pt-6 flex space-y-6 flex-col pricing:pt-18 pricing:flex-row">
                         
                         <!-- Free Card -->
-                        <div class="p-8 bg-white border border-slate-200 text-center w-auto rounded-3xl shadow-xl pricing:w-96 pricing:p-8 pricing:pr-16">
+                        <div class="p-2  bg-white border border-slate-200 text-center w-auto rounded-3xl shadow-xl pricing:w-96 pricing:p-8 pricing:pr-16">
                             <h1 class="text-black font-semibold text-2xl">Free</h1>
                             <p class="pt-2 tracking-wide">
                                 <span class="text-gray-400 align-top">$ </span>
@@ -304,7 +315,7 @@
                             </p>
                             <hr class="mt-4 border-1">
                             <div class="pt-8 space-y-6 text.">
-                                <p class="font-semibold text-gray-400 text-center flex items-center pricing:text-left">
+                                <p class="font-semibold text-gray-400 text-left flex items-center pricing:text-left">
                                     <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                       <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
                                     </svg>
@@ -329,7 +340,7 @@
                                     </span>
                                   </p>
 
-                                  <a href="" class="font-semibold inline-flex full-w
+                                  <a href="/src/download.html" class="font-semibold inline-flex full-w
                                   p-4 px-6 text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
                                   baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
                                   shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
@@ -373,7 +384,7 @@
                                     </span>
                                   </p>         
                             </div>
-                            <a href="" class="mt-8 font-semibold inline-flex full-w
+                            <a href="https://whispertranscribe.lemonsqueezy.com" class="mt-8 font-semibold inline-flex full-w
                             p-4 px-6 text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
                             baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
                             shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900 pricing:mt-16">Choose Plan →</a>
@@ -422,7 +433,7 @@
                                        <span class="text-black">Priority Support</span>
                                     </span>
                                   </p>
-                                  <a href="" class="font-semibold inline-flex full-w
+                                  <a href="https://whispertranscribe.lemonsqueezy.com" class="font-semibold inline-flex full-w
                                   p-4 px-6  text-lg text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-2xl
                                   baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 
                                   shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Choose Plan →</a>
@@ -439,7 +450,7 @@
 </section>
 
 <!--FAQ-->
-<section class="mt-16 pricing:-mt-16 mb-8">
+<section class="mt-16 pricing:-mt-16 mb-8" id="faq">
     <h1 class="text-4xl font-bold  mx-auto pt-4 text-center pb-4">FAQ</h1>
     <div class="container max-w-screen-xl header:w-10/12 px-6 mx-auto">
         <div class="flex justify-center ">
@@ -570,11 +581,7 @@
             </a>
           </li>
   
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75">
-              Cookies
-            </a>
-          </li>
+      
         </ul>
         <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
@@ -589,7 +596,7 @@
         <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
           <li>
             <a
-              href="/"
+              href="https://twitter.com/whisptranscribe"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:opacity-75"
@@ -639,7 +646,7 @@
         </ul>
       </div>
     </div>
-  </footer>
+</footer>
   
 </body>
 </html>
