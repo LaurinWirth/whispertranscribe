@@ -6,33 +6,60 @@
     <title>Terms of Service</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <link rel="stylesheet" href="/dist/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
     
 </head>
-<body class="" id="home">
-    <nav class="relative container header:w-10/12 mx-auto mt-8 p-4 pl-6 pr-6 bg-white rounded-full shadow hidden md:block border border-slate-200">
+<body class="xl:w-3/4 mx-auto w-10/12">
+    <nav class="relative container mx-auto mt-8 p-4 pl-6 pr-6 bg-white rounded-full shadow hidden md:block border border-slate-200">
         
-      <!-- Flex Container -->
-        <div class="flex items-center justify-between" >
-            <!-- Logo -->
-            <a href="/src/index.html#home" class="flex items-center">
-              <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
-              <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee leading-tight ">Whisper<br>Transcribe</h1>
-            </a>
-    
-
-            <!-- Menu -->
-            <div class="flex space-x-6 font-bold text-lg">
-                <a href="/src/index.html#how">How it works</a>
-                <a href="/src/index.html#usecases">Use Cases</a>
-                <a href="/src/index.html#price">Price</a>
-                <a href="/src/index.html#faq">FAQ</a>
+        <!-- Flex Container -->
+          <div class="flex items-center justify-between" >
+              <!-- Logo -->
+              <a href="/src/index.html#home" class="flex items-center">
+                <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
+                <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee leading-tight text-sm lg:text-lg mr-4 ">Whisper<br>Transcribe</h1>
+              </a>
+      
+  
+              <!-- Menu -->
+              <div class="flex space-x-6 font-bold text-sm lg:text-lg">
+                  <a href="/src/index.html#how">How it works</a>
+                  <a href="/src/index.html#usecases">Use Cases</a>
+                  <a href="/src/index.html#price">Price</a>
+                  <a href="/src/index.html#faq">FAQ</a>
+              </div>
+      
+              <!-- Button -->
+              <a href="/src/download.html" class="font-semibold lg:font-bold text-sm lg:text-lg ml-4 inline-flex p-3 px-6 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
+  
+          </div>
+      </nav>
+      
+      <!--Burger Menu-->
+      <section class=" mx-auto mt-8">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center justify-center mb-8 md:hidden">
+            <img src="/img/Icon_animated.gif" width="60px" height="60px" alt="Logo">
+            <h1 class="ml-2 font-semibold text-logoPurple font-otomanopee ">WhisperTranscribe</h1>
+          </a>
+          <div class="md:hidden fixed top-0 right-0 m-4 z-50 flex items-center bg-white border border-gray-500 shadow rounded" x-data="{ open: false }" @click.away="open = false">
+            <button @click="open = !open" class="p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-800 focus:outline-none focus:bg-gray-800 focus:text-white">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path x-show="!open" fill-rule="evenodd" clip-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    <path x-show="open" fill-rule="evenodd" clip-rule="evenodd" d="M4.293 4.293a1 1 0 0 1 1.414 0L12 10.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414z"/>
+                </svg>
+            </button>
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute top-0 right-0 w-64 mt-16 bg-white rounded-md shadow-lg overflow-auto" style="display: none;" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                <div class="px-8 py-4">
+                    <a href="/src/index.html#how" class="block mt-2 text-sm leading-tight hover:text-gray-800">How it works</a>
+                    <a href="/src/index.html#usecases" class="block mt-2 text-sm leading-tight hover:text-gray-800">Use Cases</a>
+                    <a href="/src/index.html#price" class="block mt-2 text-sm leading-tight hover:text-gray-800">Price</a>
+                    <a href="/src/index.html#faq" class="block mt-2 text-sm leading-tight hover:text-gray-800">FAQ</a>
+                </div>
             </div>
-    
-            <!-- Button -->
-            <a href="/src/download.html" class="font-bold inline-flex p-3 px-6 text-white bg-gradient-to-r from-mainPurple to-blue-500 rounded-full baseline hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md hover:shadow-lg hover:ring-2 hover:ring-blue-900">Try it for free →</a>
-
         </div>
-    </nav>
+      </section>
 
     <div class="header:w-10/12 mx-auto mt-16"> 
         <article id="fb6c0f44-e35e-469b-98da-96b1700d7b2b" class="prose"><header><h1 class="page-title">Terms of Use</h1><p class="page-description"></p></header><div class="page-body"><h3 id="62dfbd56-aea0-4e27-aa57-595431fe3fb0" class="">WhisperTranscribe Terms</h3><p id="d8e3f8c5-5813-4368-aaea-f2da61019b05" class=""><strong>Introduction‍</strong></p><p id="5321ad99-427a-4ff4-b911-3ccf54464a79" class="">Welcome to WhisperTranscribe, a service provided by WhisperTranscribe.com (
